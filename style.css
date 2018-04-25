@@ -28,15 +28,16 @@ html, body {
   top: var(--header-height);
   height: 100vh;
   width: 100vw;
-  transition: all 0.3s 0.3s;
+  transition: all;
   color: white;
 }
 .menu.hidden {
   transform: translateX(-100vw);
 }
-.container-fluid {
+.container{
   margin: 1em;
   margin-top: var(--header-height);
+
 }
 .menuIcon {
   height: 30px;
@@ -62,3 +63,22 @@ html, body {
 .menuIcon rect.rotateDown {
   transform: rotate(45deg) translate(17px, -14px);
 }
+
+/* bla */
+
+.event {
+  border: 1px solid #888888;
+  padding: 1.5em;
+  margin: 1em;
+  box-shadow: 2px 3px rgba(0,0,0,0.3);
+}
+.event .color {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+#events {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
