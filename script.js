@@ -30,7 +30,7 @@ function showSingleEvent(Event){
   let clone = template.cloneNode(true);
   clone.querySelector("h1").textContent = Event.title.rendered;
   //clone.querySelector(".descript").innerHTML = Event.content.rendered;
-	clone.querySelector(".date").textContent = Event.date.rendered;
+	clone.querySelector(".date").textContent = Event.acf.date;
 
 
 
