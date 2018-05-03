@@ -107,7 +107,8 @@ h1{
 	left: 23%;
 	top: -10%;
 	background: #ebd8e0;
-	font-size: 35px;;
+	font-size: 35px;
+	cursor: pointer;
 }
 h2, h3, p{
 	font-family: 'Sylfaen';

@@ -15,6 +15,7 @@ function showSinglePost(Event){
 document.querySelector(".desc").innerHTML = Event.content.rendered;
 document.querySelector(".time").innerHTML = Event.acf.time;
 document.querySelector(".price").innerHTML = Event.acf.price + " dkk";
+
 let year = Event.acf.date.substring(0, 4);
 let month = Event.acf.date.substring(4, 6);
 let day = Event.acf.date.substring(6, 8);
@@ -23,6 +24,11 @@ document.querySelector(".date").innerHTML = day + "." + month + "." + year;
 
   //show events
   document.querySelector("#singleEvent").classList.add("slideInEvent");
+}
+let home = document.querySelector("h1");
+home.addEventListener("click", homepage);
+function homepage(){
+	window.location = "index.html";
 }
 
 
