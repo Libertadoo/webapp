@@ -28,7 +28,8 @@ window.addEventListener('load',()=>{
       a.href="index.html?tag="+item.id;
 
       li.appendChild(a);
-      parentElement.appendChild(li);
+      //parentElement.appendChild(li);
+		parentElement.insertBefore(li, parentElement.firstChild);
 
 
     })
